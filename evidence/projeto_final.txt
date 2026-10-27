@@ -1,0 +1,36 @@
+==============================================================================
+Exercise 12 — Integrated terminal workflow
+==============================================================================
+COMMAND: mkdir -p "$HOME/tp_linux/projeto_final"
+# Creates a writable directory for the integrated terminal workflow.
+OUTPUT:
+
+------------------------------------------------------------------------------
+COMMAND: printf '%s\n' 'Integrated terminal workflow' > "$HOME/tp_linux/projeto_final/notes.txt"
+# Creates the text file that will be listed, inspected, and read.
+OUTPUT:
+
+------------------------------------------------------------------------------
+COMMAND: ls -l "$HOME/tp_linux/projeto_final"
+# Shows detailed metadata for the controlled exercise directory.
+OUTPUT:
+total 4
+-rw-r--r-- 1 root root 29 Oct 27 02:25 notes.txt
+
+------------------------------------------------------------------------------
+COMMAND: file "$HOME/tp_linux/projeto_final/notes.txt"
+# Identifies the type of the selected file before its content is inspected.
+OUTPUT:
+/root/tp_linux/projeto_final/notes.txt: ASCII text
+
+------------------------------------------------------------------------------
+COMMAND: less "$HOME/tp_linux/projeto_final/notes.txt"
+# Opens the text file in a pager for interactive inspection.
+MANUAL ACTION: Run this command, inspect the content, quit with q, and capture a screenshot.
+OUTPUT:
+
+------------------------------------------------------------------------------
+COMMAND: type file
+# Records the real result produced by the command above in the current Linux environment.
+OUTPUT:
+file is hashed (/usr/bin/file)

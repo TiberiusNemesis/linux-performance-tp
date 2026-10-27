@@ -1,0 +1,47 @@
+==============================================================================
+Exercise 3 — Basic terminal commands
+==============================================================================
+------------------------------------------------------------------------------
+COMMAND: date
+# Shows the current date and time in the Linux environment.
+OUTPUT:
+Mon Oct 26 20:49:24 UTC 2026
+
+------------------------------------------------------------------------------
+COMMAND: cal
+# Shows the calendar for the current month.
+OUTPUT:
+    October 2026      
+Su Mo Tu We Th Fr Sa  
+             1  2  3  
+ 4  5  6  7  8  9 10  
+11 12 13 14 15 16 17  
+18 19 20 21 22 23 24  
+25 26 27 28 29 30 31  
+                      
+
+------------------------------------------------------------------------------
+COMMAND: df
+# Shows mounted filesystems and their storage usage.
+OUTPUT:
+Filesystem           1K-blocks      Used Available Use% Mounted on
+overlay              474095688 134592804 315346676  30% /
+tmpfs                    65536         0     65536   0% /dev
+shm                      65536         0     65536   0% /dev/shm
+/run/host_mark/Users 482797652 469117652  13680000  98% /work
+/dev/vda1            474095688 134592804 315346676  30% /etc/hosts
+tmpfs                  4012572         0   4012572   0% /proc/scsi
+tmpfs                  4012572         0   4012572   0% /sys/firmware
+
+------------------------------------------------------------------------------
+COMMAND: free
+# Shows memory and swap usage in the current Linux environment.
+OUTPUT:
+               total        used        free      shared  buff/cache   available
+Mem:         8025148     5511988      140552       55160     2630740     2513160
+Swap:        1048572     1048572           0
+
+------------------------------------------------------------------------------
+COMMAND: exit
+# Shows that a nested shell can close successfully without normal standard output.
+OUTPUT:

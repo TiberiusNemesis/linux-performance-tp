@@ -1,0 +1,45 @@
+==============================================================================
+Exercise 6 — File listing, type inspection, and safe reading
+==============================================================================
+MANUAL ACTION: Open /work/workspace/inspection_samples/readme.txt with less, read it in the pager, and quit with q. Capture this interactive action in a screenshot.
+------------------------------------------------------------------------------
+COMMAND: ls "$HOME"
+# Lists the contents of the current user home directory.
+OUTPUT:
+bin
+boot
+dev
+etc
+home
+lib
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+work
+
+------------------------------------------------------------------------------
+COMMAND: file /work/workspace/inspection_samples/readme.txt
+# Identifies the type of the selected file before its content is inspected.
+OUTPUT:
+/work/workspace/inspection_samples/readme.txt: ASCII text
+
+------------------------------------------------------------------------------
+COMMAND: file /work/workspace/inspection_samples/activity.log
+# Identifies the type of the selected file before its content is inspected.
+OUTPUT:
+/work/workspace/inspection_samples/activity.log: ASCII text
+
+------------------------------------------------------------------------------
+COMMAND: file /work/workspace/inspection_samples/records.csv
+# Identifies the type of the selected file before its content is inspected.
+OUTPUT:
+/work/workspace/inspection_samples/records.csv: CSV ASCII text

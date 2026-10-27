@@ -1,0 +1,29 @@
+==============================================================================
+Exercise 7 — File and directory manipulation
+==============================================================================
+------------------------------------------------------------------------------
+COMMAND: mkdir -p "$HOME/tp_linux"
+# Creates the controlled exercise directory in the current user's home directory.
+OUTPUT:
+
+------------------------------------------------------------------------------
+COMMAND: touch "$HOME/tp_linux/teste.txt"
+# Creates the source file for the copy operation.
+OUTPUT:
+
+------------------------------------------------------------------------------
+COMMAND: cp "$HOME/tp_linux/teste.txt" "$HOME/tp_linux/teste_backup.txt"
+# Copies the source file to its backup filename.
+OUTPUT:
+
+------------------------------------------------------------------------------
+COMMAND: rm "$HOME/tp_linux/teste.txt"
+# Removes the original file while keeping the backup.
+OUTPUT:
+
+------------------------------------------------------------------------------
+COMMAND: ls -l "$HOME/tp_linux"
+# Shows that only teste_backup.txt remains in the controlled exercise directory.
+OUTPUT:
+total 0
+-rw-r--r-- 1 root root 0 Oct 27 00:19 teste_backup.txt

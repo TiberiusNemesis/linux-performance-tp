@@ -1,0 +1,19 @@
+==============================================================================
+Exercise 11 — Quoting and variable expansion
+==============================================================================
+------------------------------------------------------------------------------
+COMMAND: touch "file with spaces.txt"
+# Shows that double quotes preserve a filename containing spaces as one argument.
+OUTPUT:
+
+------------------------------------------------------------------------------
+COMMAND: echo '$topic'
+# Shows that single quotes preserve the variable name literally.
+OUTPUT:
+$topic
+
+------------------------------------------------------------------------------
+COMMAND: echo "$topic"
+# Shows that double quotes expand the variable while preserving one argument.
+OUTPUT:
+Linux

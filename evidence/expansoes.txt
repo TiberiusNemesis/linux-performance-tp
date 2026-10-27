@@ -1,0 +1,34 @@
+==============================================================================
+Exercise 10 — Shell expansions
+==============================================================================
+------------------------------------------------------------------------------
+COMMAND: mkdir -p "$HOME/tp_linux/logs"
+# Creates a writable directory for the wildcard and brace-expansion examples.
+OUTPUT:
+
+------------------------------------------------------------------------------
+COMMAND: touch "$HOME/tp_linux/logs/application.log" "$HOME/tp_linux/logs/system.log"
+# Creates the log files required by the wildcard expansion.
+OUTPUT:
+
+------------------------------------------------------------------------------
+COMMAND: printf '%s\n' "$HOME"/tp_linux/logs/*.log
+# Shows the filenames selected by the *.log wildcard expansion.
+OUTPUT:
+/root/tp_linux/logs/application.log
+/root/tp_linux/logs/system.log
+
+------------------------------------------------------------------------------
+COMMAND: touch "$HOME"/tp_linux/logs/sample_{1,2,3}.txt
+# Creates three text files through brace expansion.
+OUTPUT:
+
+------------------------------------------------------------------------------
+COMMAND: ls -1 "$HOME/tp_linux/logs"
+# Lists one filename per line to confirm the files created by shell expansion.
+OUTPUT:
+application.log
+sample_1.txt
+sample_2.txt
+sample_3.txt
+system.log

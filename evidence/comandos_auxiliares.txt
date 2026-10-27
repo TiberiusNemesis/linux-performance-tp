@@ -1,0 +1,131 @@
+==============================================================================
+Exercise 8 — Command documentation and shell support
+==============================================================================
+------------------------------------------------------------------------------
+COMMAND: type ls
+# Shows how the current shell resolves the ls command.
+OUTPUT:
+ls is hashed (/usr/bin/ls)
+
+------------------------------------------------------------------------------
+COMMAND: which ls
+# Shows the executable path found for ls.
+OUTPUT:
+/usr/bin/ls
+
+------------------------------------------------------------------------------
+COMMAND: help ls
+# Checks whether ls is a Bash builtin; status 1 is expected when it is external.
+OUTPUT:
+scripts/collect_evidence.sh: line 167: help: no help topics match `ls'.  Try `help help' or `man -k ls' or `info ls'.
+
+------------------------------------------------------------------------------
+COMMAND: man rm
+# The rm manual page must be inspected interactively and shown in a screenshot.
+MANUAL ACTION: Open man rm in the terminal, inspect the page, and quit with q. Capture a screenshot.
+
+------------------------------------------------------------------------------
+COMMAND: apropos rm
+# Searches the manual-page index for entries related to rm.
+OUTPUT:
+accessdb (8)         - dumps the content of a man-db database in a human read...
+adjtime_config (5)   - information about hardware clock setting and drift factor
+armscii-8 (7)        - Armenian character set encoded in octal, decimal, and ...
+catman (8)           - create or update the pre-formatted manual pages
+charmap (5)          - character set description file
+colrm (1)            - remove columns from a file
+csplit (1)           - split a file into sections determined by context lines
+elf (5)              - format of Executable and Linking Format (ELF) files
+eqn (1)              - format mathematics (equations) for groff or MathML
+file (1)             - determine file type
+fmt (1)              - simple optimal text formatter
+geqn (1)             - format mathematics (equations) for groff or MathML
+groff (1)            - front end to the GNU roff document formatting system
+grotty (1)           - groff output driver for typewriter-like (terminal) dev...
+inode (7)            - file inode information
+intro (5)            - introduction to file formats and filesystems
+ipcrm (1)            - remove certain IPC resources
+ipcs (1)             - show information on IPC facilities
+lexgrog (1)          - parse header information in man pages
+locale (1)           - get locale-specific information
+lscpu (1)            - display information about the CPU architecture
+lsipc (1)            - show information on IPC facilities currently employed ...
+lslogins (1)         - display information about known users in the system
+manpath (1)          - determine search path for manual pages
+manpath (5)          - format of the /etc/manpath.config file
+more (1)             - display the contents of a file in a terminal
+namei (1)            - follow a pathname until a terminal point is found
+neqn (1)             - format equations for character-cell terminal output
+networks (5)         - network name information
+nroff (1)            - format documents with groff for TTY (terminal) devices
+numa (7)             - overview of Non-Uniform Memory Architecture
+od (1)               - dump files in octal and other formats
+printf (1)           - format and print data
+proc (5)             - process information, system information, and sysctl ps...
+proc_cpuinfo (5)     - CPU and system architecture information
+proc_net (5)         - network layer information
+proc_pid (5)         - process information
+proc_pid_auxv (5)    - exec(3) information
+proc_pid_fdinfo (5)  - information about file descriptors
+proc_pid_mountinfo (5) - mount information
+proc_pid_net (5)     - network layer information
+proc_pid_stat (5)    - status information
+proc_pid_statm (5)   - memory usage information
+proc_pid_status (5)  - memory usage and status information
+proc_pid_task (5)    - thread information
+proc_self (5)        - process information
+proc_sys (5)         - system information, and sysctl pseudo-filesystem
+proc_sys_abi (5)     - application binary information
+proc_sys_dev (5)     - device-specific information
+proc_thread-self (5) - thread information
+proc_tid (5)         - thread information
+procfs (5)           - process information, system information, and sysctl ps...
+procps (3)           - API to access system level information in the /proc fi...
+procps_misc (3)      - API for miscellaneous information in the /proc filesystem
+procps_pids (3)      - API to access process information in the /proc filesystem
+ptmx (4)             - pseudoterminal master and slave
+pts (4)              - pseudoterminal master and slave
+ptx (1)              - produce a permuted index of file contents
+pty (7)              - pseudoterminal interfaces
+re_format (7)        - POSIX.2 regular expressions
+readprofile (8)      - read kernel profiling information
+rm (1)               - remove files or directories
+rmdir (1)            - remove empty directories
+securetty (5)        - list of terminals on which root is allowed to login
+setterm (1)          - set terminal attributes
+shuf (1)             - generate random permutations
+slabtop (1)          - display kernel slab cache information in real time
+sock_diag (7)        - obtaining information about sockets
+stty (1)             - change and print terminal line settings
+termcap (5)          - terminal capability database
+terminal-colors.d (5) - configure output colorization for various utilities
+termio (7)           - System V terminal driver interface
+troff (1)            - GNU roff typesetter and document formatter
+tsort (1)            - perform topological sort
+tty (1)              - print the file name of the terminal connected to stand...
+tty (4)              - controlling terminal
+ttyS (4)             - serial terminal lines
+ttytype (5)          - terminal device to default terminal type mapping
+tzfile (5)           - timezone information
+uname (1)            - print system information
+uri (7)              - uniform resource identifier (URI), including a URL or URN
+url (7)              - uniform resource identifier (URI), including a URL or URN
+urn (7)              - uniform resource identifier (URI), including a URL or URN
+utmpdump (1)         - dump UTMP and WTMP files in raw format
+
+------------------------------------------------------------------------------
+COMMAND: info rm
+# The rm info page must be inspected interactively and shown in a screenshot.
+MANUAL ACTION: Open info rm in the terminal, inspect the page, and quit with q. Capture a screenshot.
+
+------------------------------------------------------------------------------
+COMMAND: whatis rm
+# Shows the one-line manual-page description for rm.
+OUTPUT:
+rm (1)               - remove files or directories
+
+------------------------------------------------------------------------------
+COMMAND: alias ll='ls -l'; alias ll
+# Creates and displays the ll alias used for a detailed directory listing.
+OUTPUT:
+alias ll='ls -l'

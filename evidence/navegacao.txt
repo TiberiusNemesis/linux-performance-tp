@@ -1,0 +1,17 @@
+==============================================================================
+Exercise 5 — File-system navigation
+==============================================================================
+# /var/log is an absolute path, and "$HOME" expands to the current user home directory.
+------------------------------------------------------------------------------
+COMMAND: cd /var/log
+COMMAND: pwd
+# Confirms the directory reached after the navigation command.
+OUTPUT:
+/var/log
+
+------------------------------------------------------------------------------
+COMMAND: cd "$HOME"
+COMMAND: pwd
+# Confirms the directory reached after the navigation command.
+OUTPUT:
+/

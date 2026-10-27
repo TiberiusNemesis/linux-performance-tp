@@ -1,0 +1,46 @@
+==============================================================================
+Exercise 1 — Linux operating-system role and system identity
+==============================================================================
+# The values below were collected directly from the current Linux environment.
+# Linux is Unix-like and mediates hardware, processes, memory, filesystems, and application services.
+------------------------------------------------------------------------------
+COMMAND: cat /etc/os-release
+# Shows the installed Linux distribution, release, and identifying metadata.
+OUTPUT:
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.5 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+
+------------------------------------------------------------------------------
+COMMAND: uname -s
+# Shows the operating-system kernel family.
+OUTPUT:
+Linux
+
+------------------------------------------------------------------------------
+COMMAND: uname -r
+# Shows the active Linux kernel release.
+OUTPUT:
+6.10.14-linuxkit
+
+------------------------------------------------------------------------------
+COMMAND: uname -m
+# Shows the machine hardware architecture reported by the kernel.
+OUTPUT:
+aarch64
+
+------------------------------------------------------------------------------
+COMMAND: getconf LONG_BIT
+# Shows whether the current user-space environment is 32-bit or 64-bit.
+OUTPUT:
+64
